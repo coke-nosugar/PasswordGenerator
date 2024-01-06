@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inconsolata';
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+#button {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+#submitButton {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+}

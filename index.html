@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Password Generator" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="script4.js"></script>
+</head>
+<body>
+    <h1 id="pageHeading">Password Generator</h1>
+    <h3 id="pageSubheading">Enter your selections below.</h3>
+    <form id="regForm">
+        <div class="textInput">
+            <label for="numberOfCharacters">Number of characters:</label><br><br>
+            <input type="text" id="numberOfCharacters">
+        </div>
+        <div class="radios">
+            <p>Include capital letters?</p>
+            <label for="includeCapitals">Yes</label>
+            <input type="radio" id="includeCapitals" name="includeCapitals">
+            <label for="noCapitals">No</label>
+            <input type="radio" id="noCapitals" name="noCapitals"><br>
+        </div>
+        <div class="radios">
+            <p>Include numbers?</p>
+            <label for="includeNumbers">Yes</label>
+            <input type="radio" id="includeNumbers" name="includeNumbers">
+            <label for="noNumbers">No</label>
+            <input type="radio" id="noNumbers" name="noNumbers"><br>
+        </div>
+        <div class="radios">
+            <p>Include special characters?</p>
+            <label for="includeSpecialCharacters">Yes</label>
+            <input type="radio" id="includeSpecialCharacters" name="includeSpecialCharacters">
+            <label for="noSpecialCharacters">No</label>
+            <input type="radio" id="noSpecialCharacters" name="noSpecialCharacters"><br><br>
+        </div>
+        <input type="submit" id="submitButton" value="Generate password!"><br><br>
+        <div class="textInput">
+            <label for="newPassword">Your new password is: </label>
+            <input type="text" id="newPassword"  value="">
+            <button onclick="copyText()" id="button">Copy text</button>
+        </div>
+    </form>
+    <p id="placeholder"></p>
+</body>
